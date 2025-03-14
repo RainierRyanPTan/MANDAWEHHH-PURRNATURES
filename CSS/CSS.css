@@ -2,23 +2,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #000;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #411c1c;
+    background-color: #000;
     color: #fff;
+}
+.logo {
+    margin-right: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 nav ul li {
     margin-right: 20px;
+    position: relative;
 }
 nav ul li a {
     text-decoration: none;
@@ -28,29 +37,52 @@ nav ul li a {
 nav ul li a.active {
     border-bottom: 2px solid rgb(246, 242, 242);
 }
-.search-bar {
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+.nav-link:hover {
+    color: #ccc;
+}
+.active-dot {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: none;
+}
+.active .active-dot {
+    display: block;
+}
+.right-side {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+}
+.search-bar {
+    margin-right: 10px;
 }
 .search-bar input[type="search"] {
     padding: 5px;
     border-radius: 5px;
     border: none;
+    background-color: #fff;
+    color: black;
 }
-.cart-icon {
-    margin-left: 20px;
-    cursor: pointer;
-}
-nav a {
+.right-side i {
+    font-size: 24px;
     color: white;
-    text-decoration: none;
 }
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2em;
+    color: white;
 }
 .home-main {
     height: 100vh;
@@ -63,53 +95,4 @@ main {
     align-items: center;
     color: white;
     text-shadow: 0, 0, 10px black;
-}
-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-button a {
-    color: white;
-    text-decoration: none;
-}
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.product-card {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    justify-content: center;
-    align-items: center;
-}
-.product-card img {
-    width: 50%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-footer {
-    background-color: #411c1c;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    clear: both;
-}
-img {
-    width: 500px;
-    height: 450px;
-    padding-left: 40px;
-}
-td {
-    background-color: rgb(68, 168, 193);
-    font-family: Cambria;
-}
-h4 {
-    font-family: Georgia;
 }
