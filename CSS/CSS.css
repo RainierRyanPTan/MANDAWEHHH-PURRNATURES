@@ -148,3 +148,60 @@ footer {
     color: white;
     position: relative;
 }
+.social-media-icons {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+.facebook {
+    background-color: #3B5998;
+}
+.instagram {
+    background-color: #cc39a4;
+}
+.twitter {
+    background-color: #55ACEE;
+}
+.google {
+    background-color: #dd4b39;
+}
+.youtube {
+    background-color: #ff0000;
+}
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+}
+.copyright strong {
+    font-weight: bold;
+    color: white;
+}
+.copyright p {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.active-dot {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: none;
+}
+.active .active-dot {
+    display: block;
+}
