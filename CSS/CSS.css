@@ -11,6 +11,7 @@ header {
     padding: 10px 20px;
     background-color: #000;
     color: #fff;
+    border-bottom: 1px solid #fff;
 }
 .logo {
     margin-right: 20px;
@@ -101,6 +102,39 @@ main {
     color: red;
     font-style: italic;
 }
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.about-image {
+    width: 100%;
+    margin-right: 20px;
+}
+.about-image img {
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+}
+.about-text {
+    width: 60%;
+}
+.about-text h3 {
+    text-indent: 1cm;
+    font-size: 18px;
+    font-family:"Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+}
+.about-text p {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+.about-text strong {
+    font-style: italic;
+    color: red;
+}
 button {
     background-color: #fff;
     color: black;
@@ -152,11 +186,15 @@ footer {
     background-color: #000;
     color: white;
     position: relative;
+    border-top: 1px solid #fff;
 }
 .social-media-icons {
     position: absolute;
     right: 20px;
     top: 20px;
+}
+.social-media-icons-about {
+    position: 10px;
 }
 .social-icon {
     width: 40px;
