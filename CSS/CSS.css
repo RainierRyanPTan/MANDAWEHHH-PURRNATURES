@@ -96,3 +96,55 @@ main {
     color: white;
     text-shadow: 0, 0, 10px black;
 }
+button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button a {
+    color: black;
+    text-decoration: none;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #000;
+}
+.product-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.product-card img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.product-card p {
+    font-size: 18px;
+    color: white;
+}
+.product-card button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.product-card button a {
+    color: black;
+    text-decoration: none;
+}
+footer {
+    background-color: #000;
+    color: white;
+    position: relative;
+}
