@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #411c1c;
+    color: #fff;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+nav ul li a.active {
+    border-bottom: 2px solid rgb(246, 242, 242);
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.search-bar input[type="search"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.cart-icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+.home-main {
+    height: 100vh;
+    background-image: url("Living.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0, 0, 10px black;
+}
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button a {
+    color: white;
+    text-decoration: none;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.product-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+}
+.product-card img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+footer {
+    background-color: #411c1c;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+img {
+    width: 500px;
+    height: 450px;
+    padding-left: 40px;
+}
+td {
+    background-color: rgb(68, 168, 193);
+    font-family: Cambria;
+}
+h4 {
+    font-family: Georgia;
+}
