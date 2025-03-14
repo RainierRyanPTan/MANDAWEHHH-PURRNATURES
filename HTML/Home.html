@@ -3,48 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Furniture Home</title>
     <link rel="stylesheet" href="CSS.css">
 </head>
-<body background="Living.jpg">
+<body>
     <header>
         <div class="logo">
-        <h1>MANDAWEHHH</h1>
-          </div>
+            <p>MANDAWEHHH PURRNATURES</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="Home.html" class="active">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Products.html">Product</a></li>
+                <li><a href="Home.html" class="nav-link active">Home</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="About.html" class="nav-link">About</a>
+                    <div class="active-dot"></div>
+                </li>
+                <li><a href="Products.html" class="nav-link">Products</a>
+                    <div class="active-dot"></div>
+                </li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="search" placeholder="Search furniture..." />
-            <span class="cart-icon">🛒</span>
-          </div>
-        </header>
-        
-        <script>
-          
-          const links = document.querySelectorAll('nav ul li a');
-          
-          links.forEach(link => {
-            link.addEventListener('click', (e) => {
-              links.forEach(l => l.classList.remove('active'));
-              e.target.classList.add('active');
-            });
-          });
-        </script>
+        <div class="right-side">
+            <div class="search-bar">
+                <input type="search" placeholder="Search furnitures...">
+                <span class="cart-icon">🛒</span>
+        </div>
     </header>
+    <script>
+          
+        const links = document.querySelectorAll('nav ul li a');
+        
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            links.forEach(l => l.classList.remove('active'));
+            e.target.classList.add('active');
+          });
+        });
+      </script>
+
     <main class="home-main">
-        <h1>Welcome to Mandawehh Furnitures</h1>
+        <h1>Welcome to Our Furniture Store</h1>
         <p>Discover the best furniture for your home.</p>
-        <br><br><br>
         <button><a href="Products.html">Explore Products</a></button>
-        <br><br><br><br><br><br><br><br>
     </main>
     <footer>
-        <p>SERVING YOU THE RIGHT WARRANT</p>
+        <div class="social-media-icons">
+            <a href="#" class="social-icon facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon google">
+                <i class="fa fa-google" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-icon youtube">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Designed by <strong>Mandawehhh Purrnatures</strong></p>
+        </div>
     </footer>
 </body>
 </html>
