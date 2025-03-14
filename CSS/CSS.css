@@ -94,3 +94,22 @@ button a {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
+footer {
+    background-color: #411c1c;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+img {
+    width: 500px;
+    height: 450px;
+    padding-left: 40px;
+}
+td {
+    background-color: rgb(68, 168, 193);
+    font-family: Cambria;
+}
+h4 {
+    font-family: Georgia;
+}
