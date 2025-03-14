@@ -73,3 +73,15 @@ main {
     color: white;
     text-shadow: 0, 0, 10px black;
 }
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
