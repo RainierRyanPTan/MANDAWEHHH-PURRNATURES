@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Furniture Home</title>
     <link rel="stylesheet" href="CSS.css">
 </head>
 <body>
@@ -13,10 +13,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="Home.html" class="nav-link">Home</a>
+                <li><a href="Home.html" class="nav-link active">Home</a>
                     <div class="active-dot"></div>
                 </li>
-                <li><a href="About.html" class="nav-link active">About</a>
+                <li><a href="About.html" class="nav-link">About</a>
                     <div class="active-dot"></div>
                 </li>
                 <li><a href="Products.html" class="nav-link">Products</a>
@@ -24,16 +24,13 @@
                 </li>
             </ul>
         </nav>
-        <div class="right-side">
-            <div class="search-bar">
-                <input type="search" placeholder="Search furnitures...">
-                <span class="cart-icon">🛒</span>
+        <div class="search-bar">
+          <input type="search" placeholder="Search for furniture..." />
+          <span class="cart-icon">🛒</span>
         </div>
     </header>
     <script>
-          
-        const links = document.querySelectorAll('nav ul li a');
-        
+        const links = document.querySelectorAll('nav ul li a');       
         links.forEach(link => {
           link.addEventListener('click', (e) => {
             links.forEach(l => l.classList.remove('active'));
@@ -41,17 +38,13 @@
           });
         });
       </script>
-      
-    <main>
-        <h1>About Us</h1>
-        <p>We are passionate about providing high-quality furniture.</p>
-        <p>Our mission is to make your home beautiful and comfortable.</p>
-        
-        <h2>Our Story</h2>
-        <p>Our furniture business is the result of a strong friendship between Rainier Ryan P. Tan, Ashley Margareth Diaz, and Antonette Jean Dajay. Their bond and shared vision have been instrumental in shaping our company into what it is today. Through their dedication and perseverance, they have created a brand that stands for quality, style, and customer satisfaction.</p>
-        
-        <h2>Founders' Appreciation</h2>
-        <p>We would like to extend our deepest appreciation to Rainier, Ashley, and Antonette, whose collaboration and trust in each other have been the foundation of our success. Their friendship has not only brought them together but has also inspired a team that is passionate about delivering exceptional furniture to our customers.</p>
+
+    <main class="home-main">
+        <br><br><br><br><br><br><br>
+        <h1>MANDAWEHHH PURRNATURES</h1>
+        <p>from nature for <strong>the future.</strong></p>
+        <br><br><br><br><br><br><br><br>
+        <button><a href="Products.html">buy furniture</a></button>
     </main>
     <footer>
         <div class="social-media-icons">
@@ -72,7 +65,7 @@
             </a>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Designed by <strong>Mandawehhh Purrnatures</strong></p>
+            <p>&copy; 2025 Designed by <strong>MANDAWEHHH PURRNATURES</strong></p>
         </div>
     </footer>
 </body>
