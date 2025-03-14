@@ -35,7 +35,7 @@ nav ul li a {
     padding: 5px 10px;
 }
 nav ul li a.active {
-    border-bottom: 2px solid rgb(246, 242, 242);
+    border-bottom: 2px solid red;
 }
 .nav-link {
     text-decoration: none;
@@ -43,7 +43,7 @@ nav ul li a.active {
     padding: 5px 10px;
 }
 .nav-link:hover {
-    color: #ccc;
+    color: #fff;
 }
 .active-dot {
     position: absolute;
@@ -85,7 +85,7 @@ main {
     color: white;
 }
 .home-main {
-    height: 100vh;
+    height: 60vh;
     background-image: url("Living.jpg");
     background-size: cover;
     background-position: center;
@@ -95,6 +95,11 @@ main {
     align-items: center;
     color: white;
     text-shadow: 0, 0, 10px black;
+    font-style: normal;
+}
+.home-main strong {
+    color: red;
+    font-style: italic;
 }
 button {
     background-color: #fff;
