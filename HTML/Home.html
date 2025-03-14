@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body background="Living.jpg">
+    <header>
+        <div class="logo">
+        <h1>MANDAWEHHH</h1>
+          </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Products.html">Product</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="search" placeholder="Search furniture..." />
+            <span class="cart-icon">🛒</span>
+          </div>
+        </header>
+        
+        <script>
+          
+          const links = document.querySelectorAll('nav ul li a');
+          
+          links.forEach(link => {
+            link.addEventListener('click', (e) => {
+              links.forEach(l => l.classList.remove('active'));
+              e.target.classList.add('active');
+            });
+          });
+        </script>
+    </header>
+    <main class="home-main">
+        <h1>Welcome to Mandawehh Furnitures</h1>
+        <p>Discover the best furniture for your home.</p>
+        <br><br><br>
+        <button><a href="Products.html">Explore Products</a></button>
+        <br><br><br><br><br><br><br><br>
+    </main>
+    <footer>
+        <p>SERVING YOU THE RIGHT WARRANT</p>
+    </footer>
+</body>
+</html>
